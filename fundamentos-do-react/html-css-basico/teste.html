@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta />
+    <title>Primeira página</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      @media screen {
+      }
+      @media (max-width: 767.98px) {
+        body {
+          background-color: #ffdf2c;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        body {
+          background-color: #fc76f1;
+        }
+      }
+      @media (min-width: 992px) {
+        body {
+          background-color: #67b5ff;
+        }
+      }
+      h2 {
+        font-size: 32px;
+        color: red;
+      }
+      .flex {
+        display: flex;
+      }
+      .item {
+        width: 80px;
+        height: 80px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .item:hover {
+        background-color: chocolate;
+        cursor: pointer;
+      }
+      .item:nth-child(1):hover {
+        background-color: darkorchid;
+      }
+      .item:nth-child(2):hover {
+        background-color: rgb(64, 231, 114);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Titulo da página 2</h1>
+    </header>
+    <section>
+      <h2>Titulo da página 2</h2>
+      <h3>Titulo da página 2</h3>
+      <p>Este é um apenas um paragrafo...</p>
+      <a href="https://google.com">Clicle aqui</a>
+    </section>
+    <div>
+      <h4>Titulo da página 2</h4>
+      <h5>Titulo da página 2</h5>
+      <ul>
+        <li>premeiro</li>
+        <li>segundo</li>
+        <li>terceiro</li>
+      </ul>
+      <input type="text" />
+      <textarea name="" id="">-> </textarea>
+      <button>Teste</button>
+      <img src="" alt="" />
+    </div>
+    <div>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Idade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>01</th>
+            <th>Pablo</th>
+            <th>25</th>
+          </tr>
+          <tr>
+            <td align="center">02</td>
+            <td align="center">Jose</td>
+            <td align="center">30</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td align="center" colspan="3">Soma da idade: 40</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div>
+      <form action="https://google.com" method="get">
+        <div>
+          <label for="nome">Nome:</label>
+          <br />
+          <input type="text" id="nome" name="nome" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <br />
+          <input type="text" id="email" name="email" />
+        </div>
+        <div>
+          <label for="msg">Mensagem:</label>
+          <br />
+          <input type="text" id="msg" name="msg" />
+        </div>
+        <div>
+          <button>Enviar</button>
+        </div>
+        <div class="flex">
+          <div class="item">a</div>
+          <div class="item">b</div>
+          <div class="item">c</div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
